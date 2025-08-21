@@ -1,6 +1,3 @@
-# Programación 1 - Ejercicios de Variables en Python
-# El resultado de cada ejercicio debe mostrarse por pantalla.
-# Las variables deben quedar todas en el archivo entregado.
 
 # 1. Crea una variable llamada "numero1" y asígnale un número entero de tu elección.
 numero1 = 10
@@ -81,3 +78,4 @@ print("nombre_minus =", nombre_minus)
 # 16. Con el nombre en mayúsculas, aplica un método para que solo la primera letra sea mayúscula.
 nombre_capitalizado = nombre_mayus.capitalize()
 print("nombre_capitalizado =", nombre_capitalizado)
+
