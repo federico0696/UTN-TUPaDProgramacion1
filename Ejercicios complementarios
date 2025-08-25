@@ -1,1 +1,81 @@
 
+# instituto_ingles.py
+
+# Solicitar la fecha al usuario
+fecha = input("Ingrese la fecha actual en formato 'día, DD/MM': ")
+
+# Separar el día y la fecha
+try:
+    dia_semana, fecha_num = fecha.split(",")
+    dia_semana = dia_semana.strip().lower()
+    dia, mes = fecha_num.strip().split("/")
+    dia = int(dia)
+    mes = int(mes)
+except:
+    print("Error en el formato ingresado.")
+    exit()
+
+# Validar día y mes
+if dia < 1 or dia > 31 or mes < 1 or mes > 12:
+    print("Error: la fecha es inválida.")
+    exit()
+
+# Procesar según el día de la semana
+if dia_semana == "lunes":
+    print("Hoy hay clases de nivel inicial.")
+    examenes = input("¿Hubo exámenes? (si/no): ").strip().lower()
+    if examenes == "si":
+        aprobados = int(input("Cantidad de alumnos aprobados: "))
+        desaprobados = int(input("Cantidad de alumnos desaprobados: "))
+        total = aprobados + desaprobados
+        if total > 0:
+            porcentaje = (aprobados / total) * 100
+            print(f"El porcentaje de aprobados fue {porcentaje:.2f}%")
+        else:
+            print("No se registraron alumnos.")
+
+elif dia_semana == "martes":
+    print("Hoy hay clases de nivel intermedio.")
+    examenes = input("¿Hubo exámenes? (si/no): ").strip().lower()
+    if examenes == "si":
+        aprobados = int(input("Cantidad de alumnos aprobados: "))
+        desaprobados = int(input("Cantidad de alumnos desaprobados: "))
+        total = aprobados + desaprobados
+        if total > 0:
+            porcentaje = (aprobados / total) * 100
+            print(f"El porcentaje de aprobados fue {porcentaje:.2f}%")
+        else:
+            print("No se registraron alumnos.")
+
+elif dia_semana == "miércoles" or dia_semana == "miercoles":
+    print("Hoy hay clases de nivel avanzado.")
+    examenes = input("¿Hubo exámenes? (si/no): ").strip().lower()
+    if examenes == "si":
+        aprobados = int(input("Cantidad de alumnos aprobados: "))
+        desaprobados = int(input("Cantidad de alumnos desaprobados: "))
+        total = aprobados + desaprobados
+        if total > 0:
+            porcentaje = (aprobados / total) * 100
+            print(f"El porcentaje de aprobados fue {porcentaje:.2f}%")
+        else:
+            print("No se registraron alumnos.")
+
+elif dia_semana == "jueves":
+    print("Hoy hay práctica hablada.")
+    asistencia = float(input("Ingrese el porcentaje de asistencia: "))
+    if asistencia > 50:
+        print("Asistió la mayoría.")
+    else:
+        print("No asistió la mayoría.")
+
+elif dia_semana == "viernes":
+    print("Hoy hay inglés para viajeros.")
+    if dia == 1 and (mes == 1 or mes == 7):
+        print("Comienzo de nuevo ciclo.")
+        alumnos = int(input("Cantidad de alumnos del nuevo ciclo: "))
+        arancel = float(input("Arancel por cada alumno ($): "))
+        ingreso = alumnos * arancel
+        print(f"Ingreso total: ${ingreso:.2f}")
+
+else:
+    print("Error: día de la semana inválido.")
