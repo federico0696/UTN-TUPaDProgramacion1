@@ -1,5 +1,5 @@
 """
-TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN A DISTANCIA
+TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN
 Práctico 5: Listas
 Objetivo: Desarrollar la comprensión y la capacidad de manipular listas en Python
 mediante la aplicación de conceptos fundamentales como la indexación, la

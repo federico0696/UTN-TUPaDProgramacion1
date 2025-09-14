@@ -1,5 +1,5 @@
 """
-TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN A DISTANCIA
+TECNICATURA UNIVERSITARIA EN PROGRAMACIÓN
 Práctico 4: Estructuras repetitivas
 Objetivo: Implementar ciclos para resolver problemas que requieran repetición de acciones
 """
